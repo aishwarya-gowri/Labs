@@ -1,4 +1,3 @@
-# College DataBase
 
    ![DataBase Creation Screenshot](https://github.com/aishwarya-gowri/Labs/blob/master/BDA/1BM17CS011_A1/CollegeDatabase/Images/DataBase%20creation.png)
 
