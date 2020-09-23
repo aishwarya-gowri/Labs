@@ -1,0 +1,8 @@
+getwd()#to get the path of the current working directory
+list.files()#t list the files in the current directory
+help(plot)# 
+?plot
+example(mean)
+help.start()#R manual
+find('plot')
+demo(graphics)##press esp to quit demo
