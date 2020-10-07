@@ -1,0 +1,12 @@
+Buff_tail <- c(10,1,37,5,12)
+Garden_bee <- c(8,3,9,6,4)
+Red_tail <- c(1,8,9,12,4)
+Carder_bee <- c(8,27,6,32,23)
+Honey_bee <- c(12,13,16,9,10)
+dt <- data.frame(Buff_tail,Garden_bee,Red_tail,Carder_bee,Honey_bee)
+dt
+plant_names <-c("Thistle","Vipers","Golden_Rain","Yellowalfala","blackberry")
+plant_names
+rownames(dt) <- plant_names
+dt
+
