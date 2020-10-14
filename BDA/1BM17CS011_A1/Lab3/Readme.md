@@ -23,3 +23,27 @@
 
 7. Import a given csv dataset from local file system into mongodb collection. 
 ![import collection](https://github.com/aishwarya-gowri/Labs/blob/master/BDA/1BM17CS011_A1/Lab3/student/Images/student%20import%20collection.png)
+
+
+## Customer Database
+1. Create  a collection by name Customers with the following attributes.
+ Cust_id, Acc_Bal, Acc_Type
+2. Insert at least 5  values into the table
+![creation of the collection](https://github.com/aishwarya-gowri/Labs/blob/master/BDA/1BM17CS011_A1/Lab3/customer/Output/create%20and%20insert%20into%20customers%20collection.png)
+
+3. Write a query to display those records whose total account balance is greater than 
+    10000 of  account type ‘Z’(fixed Account) for each customer_id.
+![update ](https://github.com/aishwarya-gowri/Labs/blob/master/BDA/1BM17CS011_A1/Lab3/customer/Output/update.png)
+
+4. Determine Minimum and Maximum account balance for each customer_id.
+![aggregate](https://github.com/aishwarya-gowri/Labs/blob/master/BDA/1BM17CS011_A1/Lab3/customer/Output/max_min_each_customer.png)
+
+5. Export the created collection into local file system
+![export customer collection](https://github.com/aishwarya-gowri/Labs/blob/master/BDA/1BM17CS011_A1/Lab3/customer/Output/export.png)
+
+6. Drop the table
+####    db.cutomer.drop()
+####    output: true
+
+7. Import a given csv dataset from local file system into mongodb collection.
+![import into customer collection](https://github.com/aishwarya-gowri/Labs/blob/master/BDA/1BM17CS011_A1/Lab3/student/Images/student%20import%20collection.png)
