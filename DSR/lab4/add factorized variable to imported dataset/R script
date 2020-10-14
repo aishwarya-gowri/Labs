@@ -1,0 +1,36 @@
+getwd()
+setwd("D:/Classes/7th sem/DSR/Lab/Programs/lab4")
+list.files()
+data<-read.csv("Churn_Modelling.csv.xls")
+data
+
+nrow(data)
+colnames(data)
+class(data)
+str(data)
+
+data$EstimatedSalary
+min(data$EstimatedSalary)
+max(data$EstimatedSalary)
+income_group<-vector(mode="character",length=length(data$EstimatedSalary))
+income_group
+income_group[data$EstimatedSalary<10000]<-"Low"
+income_group
+income_group[data$EstimatedSalary>=10000 & data$EstimatedSalary < 100000]<-"middle"
+income_group[data$EstimatedSalary>100000]<-"High"
+income_group
+spender<-factor(income_group,levels=c("Low","middle","High"),ordered=TRUE)
+spender
+data<-cbind(data,spender)
+data
+
+str(data$spender)
+head(data$spender)
+head(data)
+tail(data)
+
+data$spender
+data[1:6,]
+data[1:10,]
+
+write.csv(data,'exportedData.csv',row.names = FALSE)
