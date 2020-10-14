@@ -1,0 +1,27 @@
+
+### matrix 3a program
+Buff_tail <- c(10,1,37,5,12)
+Garden_bee <- c(8,3,9,6,4)
+Red_tail <- c(1,8,9,12,4)
+Carder_bee <- c(8,27,6,32,23)
+Honey_bee <- c(12,13,16,9,10)
+
+list<-c(Buff_tail,Garden_bee,Red_tail,Carder_bee,Honey_bee)
+list
+
+bee_names=c("Buff_tail","Garden_bee","Red_tail","Carder_bee","Honey_bee")
+bee_names
+
+plant_names =c("Thistle","Vipers","Golden_Rain","Yellowalfala","blackberry")
+plant_names
+
+M<-matrix(list,nrow=5,byrow=TRUE,dimnames=list(plant_names,bee_names))
+print(M)
+
+
+#rownames(M)<-plant_names
+#colnames(M)<-bee_names
+
+dt <- as.data.frame(t(M))
+dt
+as.list(dt)
