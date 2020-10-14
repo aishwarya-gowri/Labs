@@ -1,0 +1,8 @@
+i<-c(1,2,3)
+s<-c("abc","xyz","pqr")
+r<-c(1.0,1.2,2.5)
+typeof(r)
+
+list_data<-list(i,s,r)
+names(list_data)<-c("Integers","Strings","Real numbers")
+list_data
