@@ -1,0 +1,16 @@
+library(ggplot2)
+
+x <- rnorm(100,mean = 0, sd = 1)
+x
+
+boxplot(x)
+
+y<-rnorm(100)
+y
+
+df<-data.frame(cbind(x,y))
+df
+ggplot()+geom_point(data=df,aes(x=x,y=y),size=3,color="blue")+ggtitle("Scatter Plot")+xlab("x-axis")+ylab("y-axis")
+boxplot(df$x,df$y,Names=c("x","y"),xlab="x",ylab="y",col="blue")
+
+
