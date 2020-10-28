@@ -1,0 +1,14 @@
+empid <- c(1:10)
+salary <- sample.int(100,10)
+salary
+marital_status <- c("Married","Married","Bachelor","Bachelor","Married","Bachelor","Married","Bachelor","Married","Bachelor")
+marital_status
+df <- data.frame(empid,salary,marital_status)
+df
+
+boxplot(salary ~ marital_status,data = df)
+boxplot
+
+
+
+
