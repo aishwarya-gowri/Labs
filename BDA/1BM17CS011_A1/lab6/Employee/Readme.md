@@ -8,7 +8,7 @@
 2. Create a column family by name Employee-Info with attributes 
     Emp_Id Primary Key, Emp_Name, Designation, Date_of_Joining, Salary,   
     Dept_Name
-> CREATE TABLE Employee_Info (Emp_Id int PRIMARY KEY,Emp_name text,Designation text,DateOfJoining timestamp,Salary double,Department text) WITH CLUSTERING ORDER BY (Salary ASC);;
+> CREATE TABLE Employee_Info (Emp_Id int PRIMARY KEY,Emp_name text,Designation text,DateOfJoining timestamp,Salary double,Department text) WITH CLUSTERING ORDER BY (Salary ASC);
 
 3. Insert the values into the table in batch
 > BEGIN BATCH
