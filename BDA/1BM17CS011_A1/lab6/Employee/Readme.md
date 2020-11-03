@@ -8,7 +8,7 @@
 2. Create a column family by name Employee-Info with attributes 
     Emp_Id Primary Key, Emp_Name, Designation, Date_of_Joining, Salary,   
     Dept_Name
-> CREATE TABLE Employee_Info (Emp_Id int PRIMARY KEY,Emp_name text,Designation text,DateOfJoining timestamp,Salary double P,Department text) WITH CLUSTERING ORDER BY (Salary ASC);
+> CREATE TABLE Employee_Info (Emp_Id int,Emp_name text,Designation text,DateOfJoining timestamp,Salary double,Department text, PRIMARY KEY(Emp_Id));
 
 3. Insert the values into the table in batch
 > BEGIN BATCH
@@ -23,19 +23,15 @@
 
 >UPDATE Employee_Info SET Emp_name='Aishwarya Gowri E S' WHERE Emp_id=123;
 
-5. Sort the details of Employee records based on salary
-
->SELECT * FROM Employee_Info ORDER_BY Salary;
-
-6. Alter the schema of the table Employee_Info to add a column Projects which stores a set of Projects done by the corresponding Employee.
+5. Alter the schema of the table Employee_Info to add a column Projects which stores a set of Projects done by the corresponding Employee.
 
 > ALTER TABLE Employee_Info ADD Projects set< text>;
 
-7. Update the altered table to add project names.
+6. Update the altered table to add project names.
 
 >Update Employee_Info SET Projects=Projects+{'Max-Min Simulation,Brainvita'} WHERE Emp_id=123;
 
-8.Create a TTL of 15 seconds to display the values of Employees.
+7.Create a TTL of 15 seconds to display the values of Employees.
 
 >INSERT INTO Employee_Info(Emp_Id,Emp_name,Designation,DateOfJoining,Salary,Department)VALUES(129,'Ram','SE','2021-09-6',1200000,'Development')USING TTL 30;
 >SELECT salary FROM Employee_Info WHERE Emp_id=129;
