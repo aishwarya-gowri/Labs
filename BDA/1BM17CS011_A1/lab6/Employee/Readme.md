@@ -29,7 +29,7 @@
 
 6. Alter the schema of the table Employee_Info to add a column Projects which stores a set of Projects done by the corresponding Employee.
 
->ALTER TABLE Employee_Info ADD Projects set<text>;
+>ALTER TABLE Employee_Info ADD Projects set/<text>;
 
 7. Update the altered table to add project names.
 
