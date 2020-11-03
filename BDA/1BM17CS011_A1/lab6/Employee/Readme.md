@@ -18,10 +18,15 @@
             INSERT INTO Employee_Info(Emp_Id,Emp_name,Designation,DateOfJoining,Salary,Department)VALUES(124,'Lavanya','SE','2021-09-6',1200000,'Development')
             ... INSERT INTO Employee_Info(Emp_Id,Emp_name,Designation,DateOfJoining,Salary,Department)VALUES(125,'Lakshmi','Talent Aquisition','2021-03-5',1200000,'HR')
             ... APPLY BATCH;
+      
+![screenshot1](https://github.com/aishwarya-gowri/Labs/blob/master/BDA/1BM17CS011_A1/lab6/Employee/Output/insert.png)
+
             
 4.  Update Employee name and Department of Emp-Id 123
 
 >UPDATE Employee_Info SET Emp_name='Aishwarya Gowri E S' WHERE Emp_id=123;
+![screenshot2](https://github.com/aishwarya-gowri/Labs/blob/master/BDA/1BM17CS011_A1/lab6/Employee/Output/update.png)
+
 
 5. Alter the schema of the table Employee_Info to add a column Projects which stores a set of Projects done by the corresponding Employee.
 
@@ -30,6 +35,7 @@
 6. Update the altered table to add project names.
 
 >Update Employee_Info SET Projects=Projects+{'Max-Min Simulation,Brainvita'} WHERE Emp_id=123;
+![screenshot3](https://github.com/aishwarya-gowri/Labs/blob/master/BDA/1BM17CS011_A1/lab6/Employee/Output/alter%20table.png)
 
 7.Create a TTL of 15 seconds to display the values of Employees.
 
