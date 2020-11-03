@@ -1,6 +1,8 @@
 1.Create  a keyspace by name Library
 
-2. Create a column family by name Library-Info with attributes 
+>CREATE KEYSPACE Library WITH REPLICATION={'class':'SimpleStrategy','replication_factor':1};
+
+     2. Create a column family by name Library-Info with attributes 
      Stud_Id Primary Key,
      Counter_value of type Counter,
     Stud_Name, Book-Name, Book-Id, Date_of_issue
