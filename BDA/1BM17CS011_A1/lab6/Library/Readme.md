@@ -19,6 +19,8 @@ cqlsh:library> select * from library_info;
 
 >select * from library_info;
 
+![screenshot](https://github.com/aishwarya-gowri/Labs/blob/master/BDA/1BM17CS011_A1/lab6/Library/Output/insert_library.png)
+
 4. Write a query to show that a student with id 112 has taken a book “BDA” 2 times.
 
 >select * from library_info where stud_id=112;
