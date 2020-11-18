@@ -10,7 +10,6 @@ var(machine1)
 
 sd(machine1)
 
-####
 
 mean(machine2)
 
