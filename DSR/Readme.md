@@ -16,4 +16,10 @@ lab7-ztest1 and ztest2
 
 lab8-T test
 
-lab9-LInear Regression
+lab9-Linear Regression
+
+lab10-Decision trees
+
+lab11-Naive bayes
+
+lab12-matplot and multivariate
