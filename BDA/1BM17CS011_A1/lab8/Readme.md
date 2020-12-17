@@ -32,6 +32,8 @@
 ### shift to the local AverageTemperature Directory where input and java files are stored
 >cd Desktop/Hadoop/averageTemperature
 
+### add the input file from local repository to the hdfs 
+>hadoop fs -put '/home/aishwarya/Desktop/Hadoop/averageTemperature/input_data/input.txt' /AverageTemperature/Input
 
 ### compile the java files
 >sudo javac -classpath ${HADOOP_CLASSPATH} -d '/home/aishwarya/Desktop/Hadoop/averageTemperature/average_temperture_classes' '/home/aishwarya/Desktop/Hadoop/averageTemperature/AverageDriver.java' '/home/aishwarya/Desktop/Hadoop/averageTemperature/AverageReducer.java' '/home/aishwarya/Desktop/Hadoop/averageTemperature/AverageMapper.java'
@@ -41,7 +43,7 @@
 >jar -cvf averageTemperature.jar -C average_temperature_classes/ .
 
 
-### run the hadoop comand to execute the jar file and provide the inputfile and output file location the hadoop sever
+### run the hadoop comand to execute the jar file and provide the inputfile and output file location in the hadoop sever
 > hadoop jar '/home/aishwarya/Desktop/Hadoop/averageTemperature/averageTemperature.jar' AverageDriver /AverageTemperature/Input /AverageTemperature/Output
 
 
