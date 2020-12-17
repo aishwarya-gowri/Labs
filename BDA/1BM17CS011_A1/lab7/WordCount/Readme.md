@@ -41,35 +41,28 @@
 
 
 ## Input data
->hi how are you
 
->how is your job
+```
+hi how are you
+how is your job
+how is your family
+how is your brother
+how is your sister
 
->how is your family
-
->how is your brother
-
->how is your sister
+```
 
 ## Output data
 
->are	1
+```
+are	1
+brother	1
+family	1
+hi	1
+how	5
+is	4
+job	1
+sister	1
+you	1
+your	4
 
->brother	1
-
->family	1
-
->hi	1
-
->how	5
-
->is	4
-
->job	1
-
->sister	1
-
->you	1
-
->your	4
-
+```
