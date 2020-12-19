@@ -16,6 +16,8 @@
 
 ![alter table](https://github.com/aishwarya-gowri/Labs/blob/master/BDA/1BM17CS011_A1/lab9/Output/alter%20table.png)
 
+![orderby command](https://github.com/aishwarya-gowri/Labs/blob/master/BDA/1BM17CS011_A1/lab9/Output/orderby%20command%20output.png)
+
 ### 5. Generate a query to retrieve the number of employees in each department whose salary is greater than 30000
 
 ![group by](https://github.com/aishwarya-gowri/Labs/blob/master/BDA/1BM17CS011_A1/lab9/Output/Groupby%20command.png)
