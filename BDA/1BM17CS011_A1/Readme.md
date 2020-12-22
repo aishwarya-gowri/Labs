@@ -16,4 +16,4 @@ lab7:WordCount Hadoop Program.
 
 lab8:Average Temperature Program.
 
-lab9:Hive Employee Collectio.
+lab9:Hive Employee Collection.
